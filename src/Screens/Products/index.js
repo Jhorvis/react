@@ -10,6 +10,8 @@ import productService from '../../APIs/Products/product.services'
 const Products = props => {
     const [isLoading, setIsLoading] = useState(false);
     const [isFetch,setIsFetch] =  useState(false);
+    const [title,setTitle] = useState('Productos')
+
     //const [listproducts, setListProducts] = useState([]);
     const [titleProduct1, setTitleProduct1] = useState([]);
     const [priceProduct1, setpriceProduct1] = useState([]);
@@ -69,7 +71,7 @@ const Products = props => {
         <Main>
 
             <Title
-                name="Productos"
+                name={title}
             />
 
             {isLoading ?
