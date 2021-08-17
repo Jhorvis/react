@@ -21,8 +21,6 @@ import CreateIcon from '@material-ui/icons/Create';
 
 
 /// ESTA CLASE ESTA ESTATICA DEBE RECIBIR LOS PARAMETROS POR PROPS 
-// NOMBRE DE LA CLASE INCORRECTO CARDVIEW y no RecipeReviewCard
-// DEBE LLAMAR SE IGUAL QUE EL .js
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 800,
