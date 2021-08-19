@@ -1,15 +1,19 @@
 import React from 'react'
+import Cardview from '../../../Components/cardView'
 
 
 const Product = props => {
+
     return (
-    <ul>
-        <li>{props.title}</li>
-        <li>{props.price}</li>
-        <li>{props.description}</li>
-        <li>{props.category}</li>
-        <li>{props.image}</li>
-    </ul>
+
+        <Cardview
+            title = {props.title}
+            price = {props.price}
+            description =  {props.description}
+            category = {props.category}
+            image =  {props.image}
+        />
+    
     )
 }
 
