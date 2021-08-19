@@ -11,9 +11,7 @@ const Template = props => {
             name="Productos"
         />
         <Cardview/>
-        <Products
-            index={4}
-        />
+        <Products />
     </Main>
     
     );
