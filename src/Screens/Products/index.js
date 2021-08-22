@@ -1,5 +1,5 @@
-import Main from '../../Components/main'
-import Title from '../../Components/title'
+import Main from './Components/main'
+import Title from './Components/title'
 import Product from './Components/product';
 import React,{ useState, useEffect } from 'react';
 /// USE STATE ES PARA CREAR METODOS GET AND SET 
@@ -98,5 +98,4 @@ const Products = props => {
 
     );
 }
-// EXPORT PRODUCT
 export default Products;
