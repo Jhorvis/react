@@ -1,31 +1,32 @@
 import React from 'react'
-import Cardview from './cardView'
+import CardView from '../../../Components/cardView'
 
 
 const Product = props => {
 
-    const Methodedit = () =>{
-        console.log('Yo edito los datos');
-        alert('Editando los datos');
+
+    const onEdit = () =>{
+        console.log('Yo edito los datos de producto : '+props.id);
+        alert('Editando los datos id: '+props.id);
     }
 
-    const Methoddel = () =>{
-        console.log('Yo borro todo');
-        alert('Dato eliminado');
+    const onDelete = () =>{
+        console.log('Yo borro los datos de  producto : '+props.id);
+        alert('Dato eliminado id: '+props.id);
     }
 
     return (
 
-        <Cardview
+        <CardView
             title = {props.title}
             price = {props.price}
             description =  {props.description}
             category = {props.category}
             image =  {props.image}
-            buttondel = {Methoddel}
-            buttonedit = {Methodedit}
+            buttondel = {onDelete}
+            buttonedit = {onEdit}
         />
-    
+
     )
 }
 

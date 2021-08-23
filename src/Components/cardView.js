@@ -11,7 +11,7 @@ import CreateIcon from '@material-ui/icons/Create';
 import useStyles from './style'
 
 
-const Cardview = props => {
+const CardView = props => {
   const classes = useStyles();
   
   return (
@@ -41,4 +41,4 @@ const Cardview = props => {
     </Card>
   );
 }
-export default Cardview;
+export default CardView;
