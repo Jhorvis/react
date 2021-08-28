@@ -7,7 +7,7 @@ const Product = props => {
 
     const onEdit = () =>{
         console.log('Yo edito los datos de producto : '+props.id);
-        alert('Editando los datos id: '+props.id);
+        
     }
 
     const onDelete = () =>{
@@ -16,7 +16,7 @@ const Product = props => {
     }
 
     return (
-
+        
         <CardView
             title = {props.title}
             price = {props.price}
@@ -26,6 +26,7 @@ const Product = props => {
             buttondel = {onDelete}
             buttonedit = {onEdit}
         />
+        
 
     )
 }

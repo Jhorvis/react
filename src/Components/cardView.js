@@ -9,6 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
 import CreateIcon from '@material-ui/icons/Create';
 import useStyles from './style'
+import Modal from './modal';
 
 
 const CardView = props => {
@@ -35,6 +36,7 @@ const CardView = props => {
           <DeleteForeverIcon  onClick={props.buttondel}/>
         </IconButton>
         <IconButton aria-label="Edit">
+          <Modal />
           <CreateIcon  onClick={props.buttonedit}/>
         </IconButton>
       </CardActions>
